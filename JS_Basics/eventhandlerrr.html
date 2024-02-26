@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Page Title</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- <script src="js/jquery-3.7.1.min"></script> -->
+<script>
+    $("document").ready(function () {
+      $("#tee").on("click",whenMouseIsClicked);
+      $("#tee").on("mouseleave",whenMouseLeaves);
+      function whenMouseIsClicked(){
+          $("#tee").html("<h1>I am I</h1>");
+      }
+      function whenMouseLeaves(){
+        $("#tee").html("<h1>I am Not Me</h1>");
+      }
+    });
+</script>
+<style>
+    #tee{
+        width: 150px;
+        color: red;
+        height:150px;
+        border:1px solid black;
+        background:aliceblue;
+    }
+</style>
+</head>
+<body>
+    <div id="tee">
+    </div>
+
+  
+        
+</body>
+</html>

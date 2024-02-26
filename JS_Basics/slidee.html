@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Page Title</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- <script src="js/jquery-3.7.1.min"></script> -->
+<script>
+    $("document").ready(function () {
+   $("#slide-up").click(function(){
+    $("#tee").slideUp("2000","linear");
+   });
+   $("#slide-down").click(function(){
+    $("#tee").slideDown("2000","linear");
+   });
+   $("#slideToggle").click(function(){
+    $("#tee").slideToggle("2000",function(){
+        alert("Done");
+    });
+   });
+  
+    });
+</script>
+<style>
+ 
+</style>
+</head>
+<body>
+    <a href="#" id="slide-up">Slide Up</a> |  <a href="#" id="slide-down">Slide Down</a> | <a href="#" id="slideToggle">Toggle</a>
+    <div id="tee">
+        <p>rghwsrbhwswsrwsrrbvherbnewgbuiwhihgws
+            wsrbhwerhrjnedjnrejkmjrryfkmfkmrfktrerjtnre</p>
+        <p>rghwsrbhwswsrwsrrbvherbnewgbuiwhihgws
+            wsrbhwerhrjnedjnrejkmjrryfkmfkmrfktrerjtnre</p>
+    </div>
+
+  
+        
+</body>
+</html>

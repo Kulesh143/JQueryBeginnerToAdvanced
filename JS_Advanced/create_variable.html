@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Page Title</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- <script src="js/jquery-3.7.1.min"></script> -->
+<script>
+    $("document").ready(function () {
+  
+    
+       
+       $("#create_variable").click(function(){
+       var newText=$('#container p:first');
+       $("#container p:last").html(newText);
+       });
+
+
+
+    });
+</script>
+<style>
+
+</style>
+</head>
+<body>
+  <a id="create" href="#">Create</a>
+  <a id="create_text" href="#">Create Text</a>
+  <a id="create_variable" href="#">Create Text</a>
+<div id="container">
+<p>1 wrgvbuiwvuiowibwbviuwibvbiwvuiwgbivibwvwv</p>
+<p>2 wrgvbuiwvuiowibwbviuwibvbiwvuiwgbivibwvwv</p>
+<p>3 wrgvbuiwvuiowibwbviuwibvbiwvuiwgbivibwvwv</p>
+</div>
+  
+</body>
+</html>

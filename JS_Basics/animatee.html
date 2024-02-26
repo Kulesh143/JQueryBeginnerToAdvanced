@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Page Title</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- <script src="js/jquery-3.7.1.min"></script> -->
+<script>
+    $("document").ready(function () {
+  
+    $("#grow").click(function(){
+    $("#tee").animate({width:"500px"},2000);
+   });
+   $("#move").click(function(){
+    $("#tee").animate({marginLeft:"200px"},1000);
+   });
+   $("#bigger").click(function(){
+    $("#tee").animate({fontSize:"40px"},3000);
+   });
+   $("#many").click(function(){
+    $("#tee").animate({fontSize:"40px",marginLeft:"400px",width:"600px"},3000);
+   });
+    });
+</script>
+<style>
+   #tee{
+    width: 200px;
+    height: 200px;
+    background: #ccc;
+    position: absolute;
+    margin-top: 20px;
+   }
+</style>
+</head>
+<body>
+    <a href="#" id="grow">Grow</a> |  <a href="#"id="move">Move</a> | <a href="#" id="bigger">Bigger</a> |<a href="#" id="many">Many Things</a>
+    <div id="tee">
+        <p>rghwsrbhwswsrwsrrbvherbnewgbuiwhihgws
+            wsrbhwerhrjnedjnrejkmjrryfkmfkmrfktrerjtnre</p>
+        <p>rghwsrbhwswsrwsrrbvherbnewgbuiwhihgws
+            wsrbhwerhrjnedjnrejkmjrryfkmfkmrfktrerjtnre</p>
+    </div>
+
+  
+        
+</body>
+</html>

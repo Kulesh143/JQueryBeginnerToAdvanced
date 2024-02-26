@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Page Title</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- <script src="js/jquery-3.7.1.min"></script> -->
+<script>
+    $("document").ready(function () {
+  
+    $("#append").click(function(){
+     $("p:first").append("I just appended some copy!");
+    });
+    $("#prepend").click(function(){
+     $("p:first").prepend("I just prepended some copy!");
+    });
+
+
+    });
+</script>
+<style>
+
+</style>
+</head>
+<body>
+  <a id="append" href="#">Append</a>
+  <a id="prepend" href="#">Prepend</a>
+  
+<div id="container">
+<p>1 wrgvbuiwvuiowibwbviuwibvbiwvuiwgbivibwvwv</p>
+<p>2 wrgvbuiwvuiowibwbviuwibvbiwvuiwgbivibwvwv</p>
+<p>3 wrgvbuiwvuiowibwbviuwibvbiwvuiwgbivibwvwv</p>
+</div>
+  
+</body>
+</html>

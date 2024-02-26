@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Page Title</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- <script src="js/jquery-3.7.1.min"></script> -->
+<script>
+    $("document").ready(function () {
+  
+        $("#add-class").click(function(){
+          $("p:first").addClass('color');
+        });
+        $("#remove-class").click(function(){
+          $("p:first").removeClass('color');
+        });
+        $("#toggle-class").click(function(){
+          $("p:first").toggleClass('color');
+        });
+        $("#increase-class").click(function(){
+          $("p:first").css("font-size","+=1px");
+        });
+
+    });
+</script>
+<style>
+.color{
+    color: #00D8ff;
+}
+</style>
+</head>
+<body>
+  <a href="#" id="add-class">Add Class</a>
+  <a href="#" id="remove-class">Remove Class</a>
+  <a href="#" id="toggle-class">Toggle Class</a>
+  <a href="#" id="increase-class">Increase Class</a>
+
+<div id="container">
+<p>1 wrgvbuiwvuiowibwbviuwibvbiwvuiwgbivibwvwv</p>
+<p>2 wrgvbuiwvuiowibwbviuwibvbiwvuiwgbivibwvwv</p>
+<p>3 wrgvbuiwvuiowibwbviuwibvbiwvuiwgbivibwvwv</p>
+</div>
+  
+</body>
+</html>
